@@ -7,3 +7,5 @@ class Pessoa(models.Model):
     ativa = models.BooleanField(default=True)
 
 
+    def __str__(self) -> str:
+        return self.nome_completo
